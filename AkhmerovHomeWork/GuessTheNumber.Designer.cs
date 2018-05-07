@@ -1,6 +1,6 @@
 ﻿namespace AkhmerovHomeWork
 {
-    partial class GuessTheNumber
+    partial class fGuessTheNumber
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // GuessTheNumber
+            // fGuessTheNumber
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "GuessTheNumber";
+            this.Name = "fGuessTheNumber";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "GuessTheNumber";
             this.ResumeLayout(false);
 

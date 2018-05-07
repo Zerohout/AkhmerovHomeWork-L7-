@@ -117,4 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>Ваша цель добиться получения ЦЕЛЕВОГО числа путем добавления или умножения ВАШЕГО числа.
+Кнопка "Умножить" - умножает ваше число на 2.
+Кнопка "Прибавить" - прибавляет к вашему число 1.
+Кнопка "Отменить" - отменяет ваши последние действия (всего дано 5 попыток).
+Кнопка "Сброс" - сбрасывает ваше число до 1.
+Для начала нажмите кнопку "Начать".</value>
+  </data>
 </root>

@@ -16,5 +16,12 @@ namespace AkhmerovHomeWork
         {
             InitializeComponent();
         }
+
+        private void btnDoubler_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var fd = new fDoubler();
+            fd.Show();
+        }
     }
 }

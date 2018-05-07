@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AkhmerovHomeWork
 {
-    public partial class GuessTheNumber : Form
+    public partial class fGuessTheNumber : Form
     {
-        public GuessTheNumber()
+        public fGuessTheNumber()
         {
             InitializeComponent();
         }

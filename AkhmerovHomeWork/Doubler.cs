@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AkhmerovHomeWork
 {
-    public partial class Doubler : Form
+    public partial class fDoubler : Form
     {
-        public Doubler()
+        public fDoubler()
         {
             InitializeComponent();
         }

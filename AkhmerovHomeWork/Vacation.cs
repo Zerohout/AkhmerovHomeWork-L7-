@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AkhmerovHomeWork
 {
-    public partial class Vacation : Form
+    public partial class fVacation : Form
     {
-        public Vacation()
+        public fVacation()
         {
             InitializeComponent();
         }
