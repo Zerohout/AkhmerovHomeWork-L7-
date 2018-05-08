@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.btnDoubler = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnGuessTheNum = new System.Windows.Forms.Button();
+            this.btnVacation = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDoubler
@@ -45,35 +45,36 @@
             this.btnDoubler.UseVisualStyleBackColor = true;
             this.btnDoubler.Click += new System.EventHandler(this.btnDoubler_Click);
             // 
-            // button2
+            // btnGuessTheNum
             // 
-            this.button2.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(150, 120);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(250, 80);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Игра \"Угадай число\"";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnGuessTheNum.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnGuessTheNum.Location = new System.Drawing.Point(150, 120);
+            this.btnGuessTheNum.Name = "btnGuessTheNum";
+            this.btnGuessTheNum.Size = new System.Drawing.Size(250, 80);
+            this.btnGuessTheNum.TabIndex = 1;
+            this.btnGuessTheNum.Text = "Игра \"Угадай число\"";
+            this.btnGuessTheNum.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnVacation
             // 
-            this.button3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(150, 210);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(250, 80);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Заявление на отпуск";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnVacation.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnVacation.Location = new System.Drawing.Point(150, 210);
+            this.btnVacation.Name = "btnVacation";
+            this.btnVacation.Size = new System.Drawing.Size(250, 80);
+            this.btnVacation.TabIndex = 2;
+            this.btnVacation.Text = "Заявление на отпуск";
+            this.btnVacation.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnExit
             // 
-            this.button4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(150, 300);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(250, 80);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Выход";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnExit.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnExit.Location = new System.Drawing.Point(150, 300);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(250, 80);
+            this.btnExit.TabIndex = 3;
+            this.btnExit.Text = "Выход";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // fMain
             // 
@@ -81,9 +82,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(534, 411);
             this.ControlBox = false;
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnVacation);
+            this.Controls.Add(this.btnGuessTheNum);
             this.Controls.Add(this.btnDoubler);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "fMain";
@@ -96,9 +97,9 @@
         #endregion
 
         private System.Windows.Forms.Button btnDoubler;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnGuessTheNum;
+        private System.Windows.Forms.Button btnVacation;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
