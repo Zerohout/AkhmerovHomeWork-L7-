@@ -28,5 +28,12 @@ namespace AkhmerovHomeWork
         {
             Application.Exit();
         }
+
+        private void btnGuessTheNum_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var fgtn = new fGuessTheNumber();
+            fgtn.Show();
+        }
     }
 }

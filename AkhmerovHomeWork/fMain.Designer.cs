@@ -54,6 +54,7 @@
             this.btnGuessTheNum.TabIndex = 1;
             this.btnGuessTheNum.Text = "Игра \"Угадай число\"";
             this.btnGuessTheNum.UseVisualStyleBackColor = true;
+            this.btnGuessTheNum.Click += new System.EventHandler(this.btnGuessTheNum_Click);
             // 
             // btnVacation
             // 
