@@ -35,6 +35,8 @@ namespace AkhmerovHomeWork
             btnStartAgain.Text = "Начать";
 
             btnUndo.Enabled = false;
+
+            lblFinish.Hide();
         }
 
         #region Кнопки
@@ -48,6 +50,7 @@ namespace AkhmerovHomeWork
                 StartTumbler(true);
                 EndTumbler(false);
                 btnStartAgain.Text = "Сначала";
+                lblFinish.Hide();
             }
 
             undoNum.Clear();
@@ -106,6 +109,7 @@ namespace AkhmerovHomeWork
             lblUndoCount.Text = $"{undoCount}";
             userTurns++;
             lblUserNum.Text = $"{userNum}";
+            
         }
 
         private void btnHelp_Click(object sender, EventArgs e) // Справка
@@ -119,6 +123,15 @@ namespace AkhmerovHomeWork
                             "\nКнопка \"Сбросить\" - сбрасывает ваше число до 1.\n" +
                             "\nДля начала нажмите кнопку \"Начать\"." +
                             "\nДля того, чтобы переиграть - нажмите кнопку \"Сначала\"(появится после начала игры)");
+        }
+
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            userNum = targetNum;
+            userTurns = compTurns;
+            lblUserNum.Text = $"{userNum}";
+            lblUserTurns.Text = $"{userTurns}";
+            lblFinish.Show();
         }
 
         #endregion
@@ -169,12 +182,12 @@ namespace AkhmerovHomeWork
                 if (userNum > targetNum)
                 {
                     lblWinLose.ForeColor = Color.Red;
-                    lblWinLose.Text = "Проигрыш!";
+                    lblWinLose.Text = "ПРОИГРЫШ!";
                 }
                 else
                 {
                     lblWinLose.ForeColor = Color.DarkGreen;
-                    lblWinLose.Text = "Победа!";
+                    lblWinLose.Text = "ПОБЕДА!";
                 }
             }
         }
@@ -260,12 +273,6 @@ namespace AkhmerovHomeWork
 
         #endregion
 
-        private void btnFinish_Click(object sender, EventArgs e)
-        {
-            userNum = targetNum;
-            userTurns = compTurns;
-            lblUserNum.Text = $"{userNum}";
-            lblUserTurns.Text = $"{userTurns}";
-        }
+        
     }
 }

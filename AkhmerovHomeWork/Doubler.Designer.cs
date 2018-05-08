@@ -47,6 +47,7 @@
             this.lblUserTurns = new System.Windows.Forms.Label();
             this.lblWinLose = new System.Windows.Forms.Label();
             this.btnFinish = new System.Windows.Forms.Button();
+            this.lblFinish = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblUserNumLabel
@@ -241,7 +242,7 @@
             this.lblWinLose.AutoSize = true;
             this.lblWinLose.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblWinLose.ForeColor = System.Drawing.Color.OrangeRed;
-            this.lblWinLose.Location = new System.Drawing.Point(327, 28);
+            this.lblWinLose.Location = new System.Drawing.Point(333, 41);
             this.lblWinLose.Name = "lblWinLose";
             this.lblWinLose.Size = new System.Drawing.Size(189, 23);
             this.lblWinLose.TabIndex = 18;
@@ -257,12 +258,24 @@
             this.btnFinish.UseVisualStyleBackColor = true;
             this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
+            // lblFinish
+            // 
+            this.lblFinish.AutoSize = true;
+            this.lblFinish.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFinish.ForeColor = System.Drawing.Color.Red;
+            this.lblFinish.Location = new System.Drawing.Point(323, 18);
+            this.lblFinish.Name = "lblFinish";
+            this.lblFinish.Size = new System.Drawing.Size(107, 23);
+            this.lblFinish.TabIndex = 20;
+            this.lblFinish.Text = "НЕЧЕСТНАЯ";
+            // 
             // fDoubler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(684, 375);
             this.ControlBox = false;
+            this.Controls.Add(this.lblFinish);
             this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.lblWinLose);
             this.Controls.Add(this.lblUserTurns);
@@ -312,5 +325,6 @@
         private System.Windows.Forms.Label lblUserTurns;
         private System.Windows.Forms.Label lblWinLose;
         private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.Label lblFinish;
     }
 }
