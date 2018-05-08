@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.Remoting.Channels;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-namespace AkhmerovHomeWork
+﻿namespace AkhmerovHomeWork
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Drawing;
+    using System.Linq;
+    using System.Windows.Forms;
 
     public partial class fDoubler : Form
     {
@@ -71,15 +65,6 @@ namespace AkhmerovHomeWork
             }
         }
 
-        private void btnBack_Click(object sender, EventArgs e) // Возврат в Главное меню
-        {
-            StartTumbler(false);
-            EndTumbler(false);
-            btnStartAgain.Text = "Начать";
-            Hide();
-            fm.Show();
-        }
-
         private void btn_Click(object sender, EventArgs e) // Клик по кнопкам (Отменить, Прибавить, Умножить, Сбросить)
         {
             if (sender as Button == btnUndo) // Отменить
@@ -109,7 +94,7 @@ namespace AkhmerovHomeWork
             lblUndoCount.Text = $"{undoCount}";
             userTurns++;
             lblUserNum.Text = $"{userNum}";
-            
+
         }
 
         private void btnHelp_Click(object sender, EventArgs e) // Справка
@@ -123,6 +108,15 @@ namespace AkhmerovHomeWork
                             "\nКнопка \"Сбросить\" - сбрасывает ваше число до 1.\n" +
                             "\nДля начала нажмите кнопку \"Начать\"." +
                             "\nДля того, чтобы переиграть - нажмите кнопку \"Сначала\"(появится после начала игры)");
+        }
+
+        private void btnBack_Click(object sender, EventArgs e) // Возврат в Главное меню
+        {
+            StartTumbler(false);
+            EndTumbler(false);
+            btnStartAgain.Text = "Начать";
+            Hide();
+            fm.Show();
         }
 
         private void btnFinish_Click(object sender, EventArgs e)
@@ -182,7 +176,7 @@ namespace AkhmerovHomeWork
                 if (userNum > targetNum)
                 {
                     lblWinLose.ForeColor = Color.Red;
-                    lblWinLose.Text = "ПРОИГРЫШ!";
+                    lblWinLose.Text = "ПОРАЖЕНИЕ!";
                 }
                 else
                 {
@@ -273,6 +267,6 @@ namespace AkhmerovHomeWork
 
         #endregion
 
-        
+
     }
 }

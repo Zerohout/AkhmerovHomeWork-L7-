@@ -244,9 +244,9 @@
             this.lblWinLose.ForeColor = System.Drawing.Color.OrangeRed;
             this.lblWinLose.Location = new System.Drawing.Point(333, 41);
             this.lblWinLose.Name = "lblWinLose";
-            this.lblWinLose.Size = new System.Drawing.Size(189, 23);
+            this.lblWinLose.Size = new System.Drawing.Size(197, 23);
             this.lblWinLose.TabIndex = 18;
-            this.lblWinLose.Text = "ПОБЕДА/ПРОИГРЫШ";
+            this.lblWinLose.Text = "ПОБЕДА/ПОРАЖЕНИЕ";
             // 
             // btnFinish
             // 
@@ -265,9 +265,9 @@
             this.lblFinish.ForeColor = System.Drawing.Color.Red;
             this.lblFinish.Location = new System.Drawing.Point(323, 18);
             this.lblFinish.Name = "lblFinish";
-            this.lblFinish.Size = new System.Drawing.Size(107, 23);
+            this.lblFinish.Size = new System.Drawing.Size(114, 23);
             this.lblFinish.TabIndex = 20;
-            this.lblFinish.Text = "НЕЧЕСТНАЯ";
+            this.lblFinish.Text = "НЕ ЧЕСТНАЯ";
             // 
             // fDoubler
             // 
