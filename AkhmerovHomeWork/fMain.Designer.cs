@@ -65,6 +65,7 @@
             this.btnVacation.TabIndex = 2;
             this.btnVacation.Text = "Заявление на отпуск";
             this.btnVacation.UseVisualStyleBackColor = true;
+            this.btnVacation.Click += new System.EventHandler(this.btnVacation_Click);
             // 
             // btnExit
             // 

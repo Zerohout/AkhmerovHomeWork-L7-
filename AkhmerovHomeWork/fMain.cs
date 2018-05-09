@@ -35,5 +35,12 @@ namespace AkhmerovHomeWork
             var fgtn = new fGuessTheNumber();
             fgtn.Show();
         }
+
+        private void btnVacation_Click(object sender, EventArgs e)
+        {
+            Hide();
+            var fv = new fVacation();
+            fv.Show();
+        }
     }
 }
